@@ -107,7 +107,7 @@ for epoch in range(n_epochs):
         loss_D_real = loss_GAN(pred_real, label_real)
 
         fake_A = fake_A_buffer.push_and_pop(fake_A)
-        pred_fake = netD_A(fake_A.detach())
+        pred_fake = netD_A(fake_A.detach())  # 优化 loss_D_fake时不优化fake_A的参数 也就是不优化生成器
         loss_D_fake = loss_GAN(pred_fake, label_fake)
         loss_D_A = (loss_D_real + loss_D_fake) * 0.5
 

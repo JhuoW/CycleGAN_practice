@@ -18,6 +18,8 @@ python train.py
 python test.py
 ```
 
+80个epochs的训练模型已被保存在saved_model文件夹下，直接加载模型可测试。
+
 All in ```CycleGAN.ipynb```.
 
 论文地址: https://arxiv.org/pdf/1703.10593.pdf
