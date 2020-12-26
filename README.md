@@ -5,7 +5,7 @@
 ```
 $ mkdir datasets
 $ chmod u+x download_dataset
-$ ./download_dataset        # 查看数据集
+$ ./download_dataset        
 $ ./download_dataset apple2orange  # 下载数据集
 ```
 ### 训练
